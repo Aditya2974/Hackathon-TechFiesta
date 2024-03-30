@@ -1,0 +1,18 @@
+Requirements : 
+
+RegionWise Demand
+
+Multiple crops prediction : 
+
+
+k-means clustering : Using weighted-average means 
+
+
+MultiOutput Regression
+Data Pipeline 
+EDA -> For crop price detection
+Daily Price predictor
+FineTuning of Models 
+Clustering 
+
+# Encoded-decoded dictionary.

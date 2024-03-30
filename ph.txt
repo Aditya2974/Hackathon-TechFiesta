@@ -1,0 +1,38 @@
+City,District,Min pH,Max pH
+Mumbai,City of Mumbai,6.0,7.5
+Pune,Pune,6.5,8.0
+Nagpur,Nagpur,6.0,7.5
+Aurangabad,Aurangabad,6.0,7.5
+Nashik,Nashik,6.5,8.0
+Thane,Thane,6.0,7.5
+Solapur,Solapur,6.5,8.0
+Amravati,Amravati,6.0,7.5
+Nanded,Nanded,6.0,7.5
+Kolhapur,Kolhapur,6.5,8.0
+Sangli,Sangli,6.5,8.0
+Ahmednagar,Ahmednagar,6.0,7.5
+Satara,Satara,6.0,7.5
+Latur,Latur,6.5,8.0
+Jalgaon,Jalgaon,6.0,7.5
+Akola,Akola,6.0,7.5
+Dhule,Dhule,6.5,8.0
+Nandurbar,Nandurbar,6.5,8.0
+Kalyan,Kalyan-Dombivli,6.0,7.5
+Vasai-Virar,Vasai-Virar,6.0,7.5
+Panvel,Raigad,6.5,8.0
+Ulhasnagar,Thane,6.0,7.5
+Bhiwandi,Thane,6.0,7.5
+Ichalkaranji,Kolhapur,6.5,8.0
+Achalpur,Amravati,6.0,7.5
+Parbhani,Parbhani,6.0,7.5
+Jalna,Jalna,6.5,8.0
+Bhusawal,Jalgaon,6.0,7.5
+Navi Mumbai,Thane,6.0,7.5
+Beed,Beed,6.5,8.0
+Osmanabad,Osmanabad,6.5,8.0
+Wardha,Wardha,6.0,7.5
+Yavatmal,Yavatmal,6.0,7.5
+Sangamner,Ahmednagar,6.5,8.0
+Aurangabad (D),Aurangabad,6.0,7.5
+Malegaon,Nashik,6.0,7.5
+Ahmedpur,Latur,6.5,8.0

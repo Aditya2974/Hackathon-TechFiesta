@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gantt Chart - Sugarcane Cultivation</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <canvas id="ganttChart" width="800" height="400"></canvas>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const ctx = document.getElementById('ganttChart').getContext('2d');
+
+      const farmerData = [
+        { crop: 'Wheat', start: '2019-03-15', end: '2019-05-01' },
+        { crop: 'Corn', start: '2019-07-01', end: '2019-09-01' },
+        { crop: 'Soybean', start: '2020-02-15', end: '2020-05-15' },
+        { crop: 'Barley', start: '2020-08-01', end: '2020-10-01' },
+        { crop: 'Rice', start: '2021-03-01', end: '2021-07-01' },
+        { crop: 'Potato', start: '2021-05-01', end: '2021-08-01' },
+        { crop: 'Maize', start: '2022-04-01', end: '2022-07-01' },
+        { crop: 'Sorghum', start: '2022-07-01', end: '2022-10-01' },
+        { crop: 'Sunflower', start: '2023-03-01', end: '2023-06-01' },
+        { crop: 'Cotton', start: '2023-06-01', end: '2023-09-01' },
+        { crop: 'Peanut', start: '2024-02-01', end: '2024-06-01' },
+        { crop: 'Sugarcane', start: '2024-05-01', end: '2024-08-01' }
+      ];
+
+      const sugarcaneData = farmerData.filter(item => item.crop === 'Sugarcane');
+
+      const chartData = {
+        datasets: [{
+          label: 'Sugarcane Cultivation',
+          data: sugarcaneData.map(item => ({
+            y: item.crop,
+            x: item.start,
+            x2: item.end
+          })),
+          backgroundColor: 'rgba(54, 162, 235, 0.6)'
+        }]
+      };
+
+      const options = {
+        scales: {
+          xAxes: [{
+            type: 'time',
+            time: {
+              unit: 'year',
+              displayFormats: {
+                year: 'YY'
+              }
+            },
+            ticks: {
+              maxRotation: 0
+            }
+          }],
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      };
+
+      new Chart(ctx, {
+        type: 'horizontalBar',
+        data: chartData,
+        options: options
+      });
+    });
+  </script>
+</body>
+</html>
+    
